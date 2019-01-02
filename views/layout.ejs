@@ -25,8 +25,8 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<% if(session.is_user_logged_in){%>
-					<li><a href="#">Logout</a></li>
-					<li><a href="#">User</a></li>
+					<li><a href="#"><span class = "glyphicon glyphicon-lock"></span> Logout</a></li>
+					<li><a href="#"><%= session.first %></a></li>
 					<% }else{ %> 
 					<li><a href="/login">Login</a></li>
 					<li><a href="/register">Register</a></li>

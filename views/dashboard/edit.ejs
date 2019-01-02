@@ -1,0 +1,38 @@
+<div class="container">
+        <form action="/dashboard/edit" method="post">
+            <input type="hidden" name="id" value="<%= result._id %>"/>
+            <div class="form-group">
+                <label> Firstname </label>
+                <input type="text" value = "<%= result.first %>" name="first" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label> Middlename </label>
+                <input type="text" value = "<%= result.middle %>" name="middle" class="form-control"/>
+            </div>
+            <div class="form-group">
+                    <label> Lastname </label>
+                    <input type="text" value = "<%= result.last %>" name="last" class="form-control"/>
+            </div>
+            <div class="form-group">
+                    <label> Mobile </label>
+                    <input type="text" value = "<%= result.mobile %>" name="mobile" class="form-control"/>
+            </div> 
+            <div class="form-group">
+                    <label> Email </label>
+                    <input type="text" value = "<%= result.email %>" name="email" class="form-control"/>
+            </div> 
+            <div class="form-group">
+                    <label> City </label>
+                    <select name="city" class="form-control">
+                        <option> <%= result.city %> </option>
+                    </select>
+            </div>   
+            <div class="form-group">
+                <label> Gender </label>
+                <input type="text" value = "<%= result.gender %>" name="gender" class="form-control"/>
+            </div>
+            
+            
+            <button class="btn btn-sm btn-success" type="submit" > Update </button> 
+        </form>
+    </div>

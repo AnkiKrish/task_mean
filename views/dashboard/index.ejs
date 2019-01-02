@@ -1,0 +1,37 @@
+<div class = "col-md-4 col-md-offset-4">
+    <h3>Welcome to Dashboard</h3>
+
+<table class = "table table-bordred table-striped">
+<tr>
+    <td>Firstname</td>
+    <td><%= result.first%></td>
+</tr>
+<tr>
+    <td>Middlename</td>
+    <td><%= result.middle%></td>
+</tr>
+<tr>
+    <td>Lastname</td>
+    <td><%= result.last%></td>
+</tr>
+<tr>
+    <td>Mobile</td>
+    <td><%= result.mobile%></td>
+</tr>
+<tr>
+    <td>Email</td>
+    <td><%= result.email%></td>
+</tr>
+<tr>
+    <td>City</td>
+    <td><%= result.city%></td>
+</tr>
+<tr>
+    <td>Gender</td>
+    <td><%= result.gender%></td>
+</tr> 
+</table>
+<a href ="/dashboard/" class = 'btn btn-info'>  View </a>  |
+<a href="/dashboard/edit/<%= result._id%>" class = 'btn btn-warning'> Edit </a>  | 
+<a href="/dashboard/delete/<%= result._id%>" class = 'btn btn-danger'> Delete </a>
+</div>
